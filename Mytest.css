@@ -20,3 +20,7 @@
   object-fit: cover; /* Cover the box without stretching the image */
   margin-bottom: 5px; /* Optional: Adds some space between the image and the text below */
 }
+.image-gallery {
+  display: none; /* Initially hide the gallery */
+  /* Add styles for the gallery, e.g., positioning, background, etc. */
+}
