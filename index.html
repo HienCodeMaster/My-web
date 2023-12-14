@@ -30,3 +30,25 @@
           <img src="Images/h1.jpg" alt="Videos" style="width: 100%; height: auto;">
           <div class="grid-item-content">
      </ul>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust minmax values as needed */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px; /* Or whatever maximum width you want */
+  margin: auto; /* This will center the container */
+}
+
+.grid-item img {
+  max-width: 100%; /* This will make sure the image is not larger than its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+
+.grid-item {
+  /* You can add styles for the grid items here if needed */
+}
+
+.grid-item-content h3 {
+  /* Styles for your h3 tags within the grid items */
+}
