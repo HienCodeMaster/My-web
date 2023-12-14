@@ -1,5 +1,16 @@
+.horizontal-layout {
+  display: flex;
+  justify-content: space-around; /* This will space your grid items evenly */
+}
+
+.grid-item {
+  cursor: pointer; /* This makes it clear that the items are clickable */
+  /* Add other styles like padding, margins, or width as desired */
+  margin: 10px; /* Example margin */
+  width: calc(25% - 20px); /* Adjust the width as necessary, accounting for margin */
+}
+
 .grid-item img {
-  max-width: 300px; /* Or any other maximum size */
-  height: auto;
-  display: block;
+  width: 100%; /* This ensures the image takes the full width of the grid item */
+  height: auto; /* This keeps the image aspect ratio intact */
 }
