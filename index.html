@@ -8,12 +8,52 @@
     <img src="Images/mor1.jpg" alt="My Pictures">
     <div class="grid-item-content">
       <h3>Pictures</h3>
-<div class="grid-item" onclick="location.href='url-to-video-content';">
+    </div>
+  </div>
+  
+  <div class="grid-item" onclick="location.href='url-to-video-content';">
     <img src="Images/climate-resilience.jpg" alt="Videos">
     <div class="grid-item-content">
       <h3>Videos</h3>
     </div>
   </div>
+</div>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
+}
+
+.grid-item-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+h3 {
+  margin: 0;
+}
+
   
   <!-- Repeat for each theme... -->
 </div>
