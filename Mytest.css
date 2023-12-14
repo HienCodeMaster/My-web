@@ -1,5 +1,5 @@
 .grid-item img {
-  max-width: 500px; /* Or any other maximum size */
-  height: auto;
+  max-width: 100%; /* Limits image width to the width of its container */
+  height: auto; /* Keeps the aspect ratio intact */
   display: block;
 }
