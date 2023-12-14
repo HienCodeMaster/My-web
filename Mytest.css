@@ -1,16 +1,18 @@
 .horizontal-layout {
-  display: flex;
-  justify-content: space-around; /* This will space your grid items evenly */
+  display: flex; /* This enables flexbox layout for its children */
+  justify-content: center; /* This centers the items horizontally */
+  align-items: center; /* This centers the items vertically */
+  flex-wrap: wrap; /* This allows items to wrap onto the next line if there's not enough room */
 }
 
 .grid-item {
-  cursor: pointer; /* This makes it clear that the items are clickable */
-  /* Add other styles like padding, margins, or width as desired */
-  margin: 10px; /* Example margin */
-  width: calc(25% - 20px); /* Adjust the width as necessary, accounting for margin */
+  margin: 5px; /* This adds some space around each item */
+  flex-basis: 20%; /* This sets an initial size for each item, adjust as needed */
+  /* Ensure the flex-basis percentage times the number of items fits into 100% 
+     accounting for margins or padding */
 }
 
 .grid-item img {
-  width: 100%; /* This ensures the image takes the full width of the grid item */
-  height: auto; /* This keeps the image aspect ratio intact */
+  max-width: 100%; /* This ensures the image is fully contained within the item */
+  height: auto; /* This maintains the aspect ratio of the image */
 }
