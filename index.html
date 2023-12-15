@@ -18,6 +18,12 @@
         <li>Reading</li>
         <li>Researching</li>
     </ul>
+      <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
     <h2>Interesting things!</h2>  
 <div class="horizontal-layout">
   <div class="grid-item">
@@ -73,5 +79,30 @@
   <li><a href="https://srdvietnam-my.sharepoint.com/:v:/g/personal/hien_srd_org_vn/EUGMWvPEq0RNn_Vq0l1qy00BKL3u1S6WesYD78hPu-ad1w?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=PGjW1x" target="_blank">Me yeu qui</a></li>
 </ul>
 <!-- Continue with the rest of your page content -->
-  
+ <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var close = document.getElementsByClassName("close")[0];
+        
+        // Get all images that should open the modal
+        var images = document.querySelectorAll(".grid-item img");
+        
+        images.forEach(function(img) {
+            img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        });
+
+        // When the user clicks on <span> (x), close the modal
+        close.onclick = function() { 
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html> 
 
