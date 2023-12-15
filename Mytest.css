@@ -49,3 +49,17 @@
   color: white; /* Sets the text color */
   text-decoration: none; /* Removes underline from links */
 }
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* other styles... */
+}
+
+.grid-item {
+  /* styles for your grid items */
+}
+
+.full-width {
+  width: 100%;
+  /* additional styles as needed */
+}
