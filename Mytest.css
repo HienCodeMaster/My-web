@@ -19,3 +19,33 @@
   height: 150px; /* Fixed height for all images */
   object-fit: cover; /* Cover the box without stretching the image */
   margin-bottom: 5px; /* Optional: Adds some space between the image and the text below */
+  .video-gallery {
+  /* Adjust the width as needed */
+  max-width: 1200px; 
+  margin: 0 auto; /* This centers the video gallery */
+}
+
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* This adds space between the videos */
+  justify-content: center; /* This centers the videos in the wrapper */
+}
+
+.video-wrapper iframe {
+  flex: 1 0 48%; /* This sets the base width for each video */
+  height: 315px; /* Adjust height as needed */
+  margin-bottom: 10px; /* Adds space below each video */
+}
+
+.video-wrapper a {
+  flex: 1 0 48%; /* Aligns with the iframes */
+  display: block; /* Allows width and height */
+  height: 315px; /* Matches iframe height */
+  background: url('path_to_your_thumbnail_image.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the thumbnail covers the anchor */
+  text-align: center; /* Centers the text */
+  line-height: 315px; /* Centers the text vertically */
+  color: white; /* Sets the text color */
+  text-decoration: none; /* Removes underline from links */
+}
