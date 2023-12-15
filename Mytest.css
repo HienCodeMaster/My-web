@@ -63,3 +63,9 @@
   width: 100%;
   /* additional styles as needed */
 }
+  /* Style the Modal */
+.modal { /* ... */ }
+.modal-content { /* ... */ }
+.close { /* ... */ }
+/* ... other modal styles ... */
+
